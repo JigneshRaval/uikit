@@ -144,7 +144,7 @@ export default {
             self: true,
 
             handler() {
-                if (!active || active === this) {
+                if (!active || active === this && !this.prev) {
                     deregisterEvents();
                 }
             }
@@ -205,7 +205,7 @@ export default {
 
             if (this.container && this.$el.parentNode !== this.container) {
                 append(this.container, this.$el);
-                return Promise.resolve().then(this.show);
+                return new Promise(resolve => requestAnimationFrame(resolve)).then(this.show);
             }
 
             return this.toggleElement(this.$el, true, animate(this));

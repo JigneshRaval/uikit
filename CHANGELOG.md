@@ -1,6 +1,27 @@
 # Changelog
 
-## WIP
+## 3.0.0 rc 23 (November 16, 2018)
+
+### Changed
+
+- Destroy Lightbox Panel upon closing
+
+### Fixed
+
+- Fix sticky not recalculating after update
+- Fix clicking on items not triggering `click` event in Sortable component
+- Fix Offcanvas changing viewport upon opening
+- Fix Masonry Grid in Rtl mode
+- Make sure autoplay does not resume after user interaction in slider-autoplay mixin
+- Fix modal not opening on first click in Angular apps
+
+## 3.0.0 rc 22 (November 9, 2018)
+
+### Fixed
+
+- Fix regressions in Modal component
+
+## 3.0.0 rc 21 (November 7, 2018)
 
 ### Added
 
@@ -25,7 +46,7 @@
 - Offcanvas no longer requires a wrapping content div
 - Change video-camera icon style to outline
 
-## Fixed
+### Fixed
 
 - Fix sorting in Sortable component on touch devices with page scrolled down
 - Fix height of Masonry Grid
